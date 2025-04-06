@@ -1,0 +1,22 @@
+<?php
+try
+{
+    $srv   = "localhost";
+    $user  = "team";
+    $passw = "admin";
+    $db    = "test";
+    
+    $conn = new mysqli($srv, $user, $passw, $db);
+    mysqli_set_charset($conn, "utf8mb4");
+
+    if ($conn->connect_errno)
+    {
+        echo"<p>failed to connect to database</p>";
+    }
+}
+catch (Exception $e) 
+{
+    echo $e->getMessage(); echo "<HR>";
+    die();
+}
+?>

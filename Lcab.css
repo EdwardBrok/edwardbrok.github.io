@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "bah";
+    src: url(ttf/bahnschrift.ttf);
+}
+
+body {
+    font-family: "bah", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; 
+    color: #444; 
+}
+
+header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #673ab7; 
+    color: #fff;
+    padding: 1em 2em; 
+    text-align: left; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500; 
+    transition: color 0.3s ease; }
+
+nav a:hover {
+    color: #ddd; 
+}
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.mainMob {
+    display: flex;
+}
+.avatarFoto {
+    height: 300px;
+    width: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #eeeeee;
+}
+
+.information {
+    margin-left: 100px;
+}
+
+.inf2 {
+    margin-left: 100px;
+    width: 370px;
+}
+
+.opis {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) { /* For smaller screens */
+    main {
+        flex-direction: column; /* Stack sections vertically */
+        display: flex;
+    }
+    #articles, aside {
+        padding: 10px;
+    }
+    nav li {
+        display: block;
+        margin: 0.5em 0;
+    }
+    .avatarFoto {
+        width: 150px;
+        height: 200px;
+    }
+    .mainMob {
+        display: flex;
+    }
+
+}
